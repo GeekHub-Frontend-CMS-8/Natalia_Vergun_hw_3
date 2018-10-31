@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<head>
+		<title>Forms</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles_for_forms/styles_for_forms.css"> 
+	</head>
+
+	<body>
+		<form action="index.php" method="get" name="my_present">
+			<h1>Расскажите немного о себе...</h1>
+			
+			<fieldset class="short_present">
+				<legend>Коротко о себе...</legend>
+					<ul>			
+						<li>
+							<label for="first_name">Имя: </label>
+							<input id="first_name" type="text" class="enter_text" >
+						</li>
+						<li>
+							<label for="second_name">Фамилия: </label>
+							<input id="second_name" type="text" class="enter_text">
+						</li>
+						<li>
+							<span>Пол: </span>
+							<input id="male" type="radio" name="gender" value="male" checked>	
+							<label for="male">мужской  </label>
+							<input id="female" type="radio" name="gender" value="female">
+							<label for="female">женский  </label>
+						</li>
+						<li>
+							<label for="age">Возраст: </label>
+							<input id="age" type="text" class="age"><span> лет</span>
+						</li>
+					</ul>
+			</fieldset>
+			
+			<fieldset class="detailed_present">
+				<legend>Подробнее о себе...</legend>
+					<section>
+						<ul>
+							<li>
+								<input id="male1" type="radio" name="gender1" value="male" checked>
+								<label for="male1">Молодой человек </label>
+							</li>
+							<li>
+								<input id="female1" type="radio" name="gender1" value="female">
+								<label for="female1">Девушка  </label>	
+							</li>
+							<li>
+								<input id="birth" type="text" name="birthday">
+								<label for="birth">Дата рождения</label>
+							</li>
+							<li>
+								<input id="fam" type="text" name="family" >
+								<label for="fam">Семейное положение</label>
+							</li>
+							<li>
+								<input id="soc" type="text" name="social_status">
+								<label for="soc">Социальный статус</label>
+							</li>
+							<li>
+								<input id="loc" type="text" name="location">
+								<label for="loc">Место жительства</label>
+							</li>
+						</ul>	
+					</section>
+					<section>
+						<h4>Что вы обычно делаете на выходных?</h4>
+						<ul>
+							<li>
+								<input type="checkbox" id="1ch" name="activity" value="sleeping">
+								<label for="1ch">Сплю</label>
+							</li>
+							<li>
+								<input type="checkbox" id="2ch" name="activity" value="walking">
+								<label for="2ch">Гуляю с друзьями</label>
+							</li>	
+							<li>
+								<input type="checkbox" id="3ch" name="activity" value="fishing">
+								<label for="3ch">Хожу на рыбалку</label>
+							</li>
+							<li>
+								<input type="checkbox" id="4ch" name="activity" value="playing">
+								<label for="4ch">Играю в игры</label>
+							</li>
+							<li>
+						</ul>	
+					</section>
+					<section>
+						<h4>Рассказать о формах в книге, посвященной HTML:</h4>
+						<select name="site_freq">
+							<option>Site frequency:</option>
+							<option>first site</option>
+							<option>second site</option>
+						</select>
+					</section>	
+					<section>
+						<h4>Сколько книг вы прочитали за свою жизнь?</h4>
+						<ul>
+							<li>
+								<input type="radio" id="1r" name="books" value="0-10">
+								<label for="1r">0-10</label>
+							</li>
+							<li>
+								<input type="radio" id="2r" name="books" value="11-20">
+								<label for="2r">11-20</label>
+							</li>						
+							<li>
+								<input type="radio" id="3r" name="books" value="21-50">
+								<label for="3r">21-50</label>
+							</li>
+							<li>
+								<input type="radio" id="4r" name="books" value="50+">
+								<label for="4r">50+</label>
+							</li>
+						</ul>
+					</section>	
+					<section>
+						<h4 class="close_to_text">Ваши комментарии:</h4>
+						<textarea cols="75" rows="10" name="comments"></textarea>
+					</section>
+					<section>
+						<select class="last_select" size="3">
+							<option>Первая позиция</option>
+							<option selected>Вторая позиция</option>
+							<option>Третья позиция</option>
+						</select>
+					</section>
+			</fieldset>
+			
+			<fieldset class="at_least_present">
+				<legend>И в заключение</legend>
+				<section>
+					<input class="enter_text" type="text" placeholder="Это поле было введено до вас" >
+				</section>
+				<section>
+					<h4 class="close_to_text">Email:</h4>
+					<input class="enter_text" type="email" name="email">
+				</section>
+				<section>
+					<h4 class="close_to_text">Хотите подписаться на самую модную рассылку спама?</h4>
+					<span><i>Выберите категории</i></span>
+						<ul>
+						<li>
+							<input type="checkbox" id="ch1" name="mailing" value=" equipment">
+							<label for="ch1">Оборудование</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ch2" name="mailing" value="cooking">
+							<label for="ch2">Как приготовить обеды?</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ch3" name="mailing" value="earn">
+							<label for="ch3">Заработай миллион за два дня!</label>
+						</li>
+						</ul>
+				</section>	
+				<section>
+					<h4>Насколько сложная задача?</h4>
+					<ul>
+						<li>
+							<input type="radio" id="r1" name="difficulty" value="min" checked>
+							<label for="r1">Совсем нет</label>
+						</li>
+						<li>
+							<input type="radio" id="r2" name="difficulty" value="mid">
+							<label for="r2">Так себе</label>
+						</li>
+						<li>
+							<input type="radio" id="r3" name="difficulty" value="max">
+							<label for="r3">Еле справились</label>
+						</li>
+					</ul>
+				</section>
+			</fieldset>
+			<input type="submit" value="Отправить">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+form {
+	margin: 30px;
+}
+
+fieldset {
+	margin-bottom: 1em;
+}
+
+fieldset.short_present {
+	line-height: 2;
+}
+
+fieldset.detailed_present{
+	padding-bottom: 1.5em;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	padding: 0;
+	margin-left: 0;
+}
+
+.age {
+	width: 30px;
+}
+
+select {
+	width: 150px;
+}
+
+select.last_select {
+	margin-top: 1em;
+}
+
+h4.close_to_text {
+	margin-bottom: 0;
+}
+
+.enter_text {
+	width: 250px;
+}
+
+label.email {
+	display: block;
+}
